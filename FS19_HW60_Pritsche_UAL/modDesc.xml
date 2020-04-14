@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="43">
-    <author>Mr.Dinamit88/ LS17/19 Umbau + Konzept HW60 Planenaufbau by ***ADOLF*** von den ***OSTMODDING-FREUNDEN***</author>
-    <version>1.0</version>
+    <author>Mr.Dinamit88/ LSFarmers / LS17/19 Umbau + Konzept HW60 Planenaufbau by ***ADOLF*** von den ***OSTMODDING-FREUNDEN***</author>
+    <version>1.0.0.0.1</version>
     <title>
         <en>HW60 mit Planenaufbau</en>
         <de>HW60 mit Planenaufbau</de>
@@ -56,6 +56,10 @@ Unterhaltskosten: 10 € / Tag]]>
 		<text name="category_Ostmodding_Freunde"> <en>Ostmodding Freunde</en> <de>Ostmodding Freunde</de> </text>
     </l10n>
 	
+	<brands>
+        <brand name="OSTMODDING" title="Ostmodding Freunde" image="Ostmodding_Freunde.dds"/>
+    </brands>
+	
 	<extraSourceFiles>
 		<sourceFile filename="Scripts/AddStoreCategory.lua" />
 	</extraSourceFiles>
@@ -89,7 +93,7 @@ Unterhaltskosten: 10 € / Tag]]>
   
     <storeItems>
 	    <newStoreCategories>
-			<newStoreCategory type="VEHICLE" name="Ostmodding_Freunde" title="$l10n_category_Ostmodding_Freunde" image="Ostmodding_Freunde.dds" />
+			<newStoreCategory type="TOOL" name="Ostmodding_Freunde" title="$l10n_category_Ostmodding_Freunde" image="Ostmodding_Freunde.dds" />
         </newStoreCategories>
         <storeItem xmlFilename="HW_60_11.xml" rootNode="vehicle"/>
     </storeItems> 
