@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="43">
+    <author>Mr.Dinamit88/ LS17/19 Umbau + Konzept HW60 Planenaufbau by ***ADOLF*** von den ***OSTMODDING-FREUNDEN***</author>
+    <version>1.0</version>
+    <title>
+        <en>HW60 mit Planenaufbau</en>
+        <de>HW60 mit Planenaufbau</de>
+    </title>
+    <description>
+        <en>
+            <![CDATA[Price: 9500 €
+Maintenance: 10 € / day]]>
+        </en>
+        <de>
+            <![CDATA[Preis: 9500 €
+Unterhaltskosten: 10 € / Tag]]>
+        </de>
+    </description>
+  <iconFilename>store.dds</iconFilename>
+  <multiplayer supported="true"/>
+  
+   
+  
+    <l10n>
+		<!-- UAL -->
+		<text name="input_workMode"><de>Arbeitsmodus</de></text>
+		<text name="input_select"><de>Wählen Sie Material</de></text>
+		<text name="input_markerPosition"><de>Markierung Stellung</de></text>
+		<text name="input_unload"><de>Entladen</de></text>
+		<text name="input_markerUp"><de>Markierung: rücken</de></text>
+		<text name="input_markerDown"><de>Markierung: absteigen</de></text>
+		<text name="input_markerLeft"><de>Markierung: nach links</de></text>
+		<text name="input_markerRight"><de>Markierung: nach rechts</de></text>
+		<text name="input_markerOriginal"><de>Markierung: ursprüngliche position</de></text>
+		<text name="input_markerForward"><de>Markierung: vorwärts bewegen</de></text>
+		<text name="input_markerBackward"><de>Markierung: rückwärts bewegen</de></text>
+		<text name="input_markerRotation"><de>Markierung: drehen 90°</de></text>
+		<text name="unload"><de>Entladen</de></text>
+		<text name="center"><de>Center Entladen</de></text>
+		<text name="left"><de>Entladen Links</de></text>
+		<text name="right"><de>Entladen Rechts</de></text>
+		<text name="back"><de>Hinten Entladen</de></text>
+		<text name="Squares"><de>Quadratische Ballen</de></text>
+		<text name="Rounds"><de>Runde Ballen</de></text>
+		<text name="Pallets"><de>Paletten</de></text>
+		<text name="function_easyAutoLoader"><de>Ermöglicht das automatische Laden von Ballen und Paletten</de></text>
+	
+	    <text name="workModeOn">
+            <en>Work on</en>
+            <de>Arbeitsmodus anschalten</de>
+        </text>
+        <text name="workModeOff">
+            <en>Work off</en>
+            <de>Arbeitsmodus ausschalten</de>
+        </text>
+		<text name="category_Ostmodding_Freunde"> <en>Ostmodding Freunde</en> <de>Ostmodding Freunde</de> </text>
+    </l10n>
+	
+	<extraSourceFiles>
+		<sourceFile filename="Scripts/AddStoreCategory.lua" />
+	</extraSourceFiles>
+	
+	<specializations>
+        <specialization name="easyAutoLoader" className="easyAutoLoader" filename="Scripts/easyAutoLoader.lua"/>
+    </specializations>
+	
+	<vehicleTypes>
+		<type name="HW60_Planenaufbau" parent="baseAttachable" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="tensionBelts" />
+			<specialization name="easyAutoLoader" />
+		</type>
+	</vehicleTypes>
+	
+
+    <actions>
+		<action name="workMode" axisType="HALF"/>
+		<action name="select" axisType="HALF"/>
+		<action name="markerPosition" axisType="HALF"/>
+		<action name="unload" axisType="HALF"/>
+		<action name="markerUp" axisType="HALF"/>
+		<action name="markerDown" axisType="HALF"/>
+		<action name="markerLeft" axisType="HALF"/>
+		<action name="markerRight" axisType="HALF"/>
+		<action name="markerForward" axisType="HALF"/>
+		<action name="markerBackward" axisType="HALF"/>
+		<action name="markerOriginal" axisType="HALF"/>
+		<action name="markerRotation" axisType="HALF"/>
+	</actions>
+  
+    <storeItems>
+	    <newStoreCategories>
+			<newStoreCategory type="VEHICLE" name="Ostmodding_Freunde" title="$l10n_category_Ostmodding_Freunde" image="Ostmodding_Freunde.dds" />
+        </newStoreCategories>
+        <storeItem xmlFilename="HW_60_11.xml" rootNode="vehicle"/>
+    </storeItems> 
+   
+	
+	<inputBinding>
+		<actionBinding action="workMode">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_u" />
+		</actionBinding>
+		<actionBinding action="select">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_z" />
+		</actionBinding>
+		<actionBinding action="markerPosition">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_b" />
+		</actionBinding>
+		<actionBinding action="unload">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_y" />
+		</actionBinding>
+		<actionBinding action="markerUp">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_j" />
+		</actionBinding>
+		<actionBinding action="markerDown">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_n" />
+		</actionBinding>
+		<actionBinding action="markerLeft">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_comma" />
+		</actionBinding>
+		<actionBinding action="markerRight">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_period" />
+		</actionBinding>
+		<actionBinding action="markerForward">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_o" />
+		</actionBinding>
+		<actionBinding action="markerBackward">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_k" />
+		</actionBinding>
+		<actionBinding action="markerOriginal">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_m" />
+		</actionBinding>
+		<actionBinding action="markerRotation">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_slash" />
+		</actionBinding>
+	</inputBinding>
+	
+</modDesc>
