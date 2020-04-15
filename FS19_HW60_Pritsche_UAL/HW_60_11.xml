@@ -106,7 +106,7 @@
             <part node="0>14" startTime="0" endTime="0.001" startTrans="0 0 0" endTrans="0 -30 0" />
 		</animation> -->
         <animation name="moveTrigger">
-			<part node="0>16|3"   startTime="0"  endTime="0.001" startTrans="0 -10 0" endTrans="0 0 0" />
+			<part node="0>16|5"   startTime="0"  endTime="0.001" startTrans="0 -10 0" endTrans="0 0 0" />
 		</animation>
         <animation name="anim">
 		    <!-- Bretter Links -->
@@ -211,7 +211,7 @@
 	
 	<!--UAL-->
 	<!--Configurable options for EasyAutoLoad-->
-	<easyAutoLoad objectsIndex="0>16|1" triggersIndex="0>16|3" markerPositionsIndex="0>16|2" markerIndex="0>16|0" triggerAnimation="moveTrigger" centerMarkerIndex="1" unloadHeightOffset="-0.75">
+	<easyAutoLoad objectsIndex="0>16|1" triggersIndex="0>16|5" markerPositionsIndex="0>16|2" markerIndex="0>16|0" triggerAnimation="moveTrigger" centerMarkerIndex="1" unloadHeightOffset="-0.75">
 		<levelBarOptions coloredIcons="true" iconColor="0.6307 0.6307 0.6307 1" fillLevelColor="0.991 0.3865 0.01 1"/>
 		<palletIcon colorIcon="Tekstury/pallet.png" overlayIcon="Tekstury/palletIconOverlay.png"/>
 		<roundBaleIcon colorIcon="Tekstury/roundBale.png" overlayIcon="Tekstury/roundBaleIconOverlay.png"/>
